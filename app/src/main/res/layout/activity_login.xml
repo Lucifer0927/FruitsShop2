@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/loginbackground"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="bwie.com.fruitsshop.LoginActivity">
+
+    <ImageView
+        android:id="@+id/img_login_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logincanl" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/login_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="30dp"
+            android:src="@mipmap/loginlogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_login"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="水果平台"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入手机号码"
+        android:padding="10dp"
+        android:textSize="18sp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/repeat_password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:passwordToggleDrawable="@drawable/login_selector"
+        app:counterEnabled="true"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/userpass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="请输入密码"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:imeOptions="actionUnspecified"
+            android:textColorHint="#fff"
+            android:textSize="18sp" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/btn_login_denglu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/loginbuttonbackground"
+        android:text="登录"
+        android:textColor="#fff"
+        android:textSize="24sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+
+        <TextView
+            android:id="@+id/gang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="|"
+            android:textColor="#F9B721" />
+
+        <TextView
+            android:id="@+id/text_login_zhucezhanghao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/gang"
+            android:text="注册账号"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_login_wangjimima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/gang"
+            android:text="忘记密码"
+            android:textColor="#F9B721"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</LinearLayout>

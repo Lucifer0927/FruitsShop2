@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FruitsShop</string>
+    <string name="tips">是否添加授权</string>
+    <string name="confrim">确认</string>
+    <string name="cancle">取消</string>
+    <string name="permission_desc">是否添加授权</string>
+
+</resources>
